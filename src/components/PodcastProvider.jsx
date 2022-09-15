@@ -48,7 +48,6 @@ export default function PodcastProvider() {
           />
           <button type="submit">Submit</button>
         </form>
-        ;
       </>
     );
 }
