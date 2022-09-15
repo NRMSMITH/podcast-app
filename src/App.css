@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+#pink_triangle_img {
+  display: flex;
+  justify-content: left;
+  width: 10em;
+  height: 10em;
+  object-fit: cover;
+}
