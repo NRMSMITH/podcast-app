@@ -1,6 +1,7 @@
 import AddNewPodcast from "./AddNewPodcast";
 //import podlist
 import { useState } from "react";
+import PodcastList from "./PodcastList";
 
 export default function PodcastProvider() {
     const [podcasts, setPodcasts] = useState([
@@ -12,15 +13,7 @@ export default function PodcastProvider() {
     
     return (
       <>
-        <ol>
-          {podcasts.map((podcast) => {
-            return (
-              <li key={podcast.id}>
-                <h2>{podcast.title}</h2>
-              </li>
-            );
-          })}
-        </ol>
+      <PodcastList podcasts={podcasts}/>
         <AddNewPodcast setNewPodcast={setNewPodcast} newPodcast={newPodcast} setPodcasts={setPodcasts}/>
       </>
     );
